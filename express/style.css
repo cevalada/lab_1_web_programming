@@ -1,0 +1,94 @@
+
+#band {
+  background: linear-gradient(135deg, #3498db 0%, #9b59b6 100%);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+p.custom-paragraph {
+  font-size: 18px;
+  color: #ecf0f1;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  text-align: justify;
+  font-family: 'Lato', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.w3-third img {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 50%;
+}
+
+.w3-third img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+/* style.css */
+
+/* Additional styling for the Band member div */
+.w3-third {
+  position: relative;
+  overflow: hidden; /* Ensure images do not overflow */
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+}
+
+.w3-third:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Styling for list items */
+ul.custom-instruments {
+  list-style-type: none; /* Remove default bullets */
+  padding: 0; /* Remove padding */
+  text-align: left; /* Align text to the left */
+  margin-top: 20px; /* Add some space above the list */
+}
+
+ul.custom-instruments li {
+  background-color: #3498db; /* Blue background for list items */
+  color: white; /* White text */
+  padding: 10px; /* Padding inside the list items */
+  margin: 5px 0; /* Margin between items */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+ul.custom-instruments li:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+.confirmation-message {
+  display: none;
+  background-color: #28a745; /* Green background */
+  color: white;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+ /* CSS for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Moves the element slightly down */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Moves the element to its original position */
+  }
+}
+
+/* Apply the animation to the contact section */
+#contact {
+  animation: fadeIn 1.5s ease-in-out;
+}
+/* Add a hover animation to the send button */
+.w3-button.w3-black:hover {
+  transform: scale(1.1); /* Makes the button grow slightly */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
